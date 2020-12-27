@@ -1,0 +1,123 @@
+.mail-link,
+.tel-link{
+display: flex;
+align-items: center;
+font-style: normal;
+color: var(--txt-grey);
+}
+
+.header-section{
+    padding-top: 24px;
+    padding-bottom: 25px;
+    background: var(--txt-white);
+    }
+    
+    .header-section .container{
+    align-items: center;
+    }
+    
+    .header-section .logo{
+    margin-right: 93px;
+    }
+    
+    .navigation{
+    display: flex;
+    align-items: center;
+    }
+    
+    .navigation-list{
+    display: flex;
+    align-items: center;
+    }
+    
+    .navigation-item:not(:last-child){
+    margin-right: 50px;
+    }
+    
+    .navigation-link{
+    position: relative;
+    }
+    .navigation-link.accent{
+    color: var(--fha-blue);
+    }
+    
+    .navigation-link.accent::after{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    top: 46px;
+    background-color: var(--fha-blue);
+    
+    transition: all 250ms var(--cubic);
+    }
+    
+    .logo{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-Size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--fha-blue);
+    }
+    
+    .logo-black{
+    color: #000; 
+    }
+    .navigation-link{
+    font-weight: 500;
+    font-Size: 14px;
+    line-height: 1.172;
+    letter-spacing: 0.02em;
+    color: var(--txt-dark);
+    
+    transition: 250ms var(--cubic);
+    }
+    
+    .contacts-list{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.172;
+    letter-spacing: 0.02em;
+    display: flex;
+    margin-left: auto;
+    }
+    
+    .header-section .contacts-mail{
+    color:var(--fha-blue);
+        
+    }
+    
+    .header-section .mail-link{
+    margin-right: 50px;
+    }
+    
+    .contacts-tel,
+    .contacts-mail{
+    fill: var(--txt-grey);
+    }
+    
+    .tel-link:hover .contacts-svg,
+    .tel-link:focus .contacts-svg{
+    fill: currentColor
+    }
+    
+    .mail-link:hover .contacts-svg,
+    .mail-link:focus .contacts-svg{
+    fill: currentColor
+    }
+    
+    .mail-link{
+    transition: 250ms var(--cubic);
+    }
+    
+    .tel-link{
+    transition: 250ms var(--cubic);
+    }
+    
+    .contacts-svg{
+    margin-right: 10px;
+    transition: 250ms var(--cubic);
+    }
