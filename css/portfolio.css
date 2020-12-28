@@ -22,8 +22,8 @@
 .portfolio-button:focus,
 .contacts-mail:hover,
 .contacts-mail:focus,
-.navigation-link:hover,
-.navigation-link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: #2196F3;
 }
 
@@ -118,24 +118,24 @@ img {
   align-items: center;
 }
 
-.navigation-list {
+.navigation__list {
   display: flex;
   align-items: center;
 }
 
-.navigation-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.navigation-link {
+.navigation__link {
   position: relative;
 }
 
-.navigation-link.accent {
+.navigation__link.accent {
   color: #2196F3;
 }
 
-.navigation-link.accent::after {
+.navigation__link.accent::after {
   display: block;
   position: absolute;
   content: "";
@@ -160,130 +160,7 @@ img {
   color: #000;
 }
 
-.navigation-link {
-  font-weight: 500;
-  font-Size: 14px;
-  line-height: 1.172;
-  letter-spacing: 0.02em;
-  color: #212121;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-list {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.172;
-  letter-spacing: 0.02em;
-  display: flex;
-  margin-left: auto;
-}
-
-.header-section .contacts-mail {
-  color: #2196F3;
-}
-
-.header-section .mail-link {
-  margin-right: 50px;
-}
-
-.contacts-tel,
-.contacts-mail {
-  fill: #757575;
-}
-
-.tel-link:hover .contacts-svg,
-.tel-link:focus .contacts-svg {
-  fill: currentColor;
-}
-
-.mail-link:hover .contacts-svg,
-.mail-link:focus .contacts-svg {
-  fill: currentColor;
-}
-
-.mail-link {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tel-link {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-svg {
-  margin-right: 10px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mail-link,
-.tel-link {
-  display: flex;
-  align-items: center;
-  font-style: normal;
-  color: #757575;
-}
-
-.header-section {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  background: #FFFFFF;
-}
-
-.header-section .container {
-  align-items: center;
-}
-
-.header-section .logo {
-  margin-right: 93px;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.navigation-list {
-  display: flex;
-  align-items: center;
-}
-
-.navigation-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.navigation-link {
-  position: relative;
-}
-
-.navigation-link.accent {
-  color: #2196F3;
-}
-
-.navigation-link.accent::after {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  top: 46px;
-  background-color: #2196F3;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-Size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: #2196F3;
-}
-
-.logo-black {
-  color: #000;
-}
-
-.navigation-link {
+.navigation__link {
   font-weight: 500;
   font-Size: 14px;
   line-height: 1.172;
