@@ -4,7 +4,7 @@
     line-height: 1.142;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--txt-dark);
+    color: $txt-dark;
     margin-bottom: 10px;
     }
     
@@ -42,5 +42,5 @@
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    color: var(--txt-grey);
+    color: $txt-grey;
     }

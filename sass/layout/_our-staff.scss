@@ -4,7 +4,7 @@
     line-height: 1.166;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--txt-dark);
+    color: $txt-dark;
     }
 
 .staff{
@@ -42,7 +42,7 @@
     }
     
     .staff-item{
-    background: var(--txt-white);
+    background: $txt-white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     }
@@ -53,7 +53,7 @@
     line-height: 1.187;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--txt-grey);
+    color: $txt-grey;
     }
     
     .section-staff-icons{
@@ -79,16 +79,16 @@
     height: 44px;
     width: 44px;
     
-    transition: background 250ms var(--cubic);
+    transition: background 250ms $cubic;
     }
     
     .icon-link:hover,
     .icon-link:focus{
     color: #FFFFFF;
-    background: var(--fha-blue);
+    background: $fha-blue;
     }
     
     .staff-ikon-svg{
     fill: currentColor;
-    transition: fill 250ms var(--cubic);
+    transition: fill 250ms $cubic;
     }

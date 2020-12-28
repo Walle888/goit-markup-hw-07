@@ -3,13 +3,13 @@
 display: flex;
 align-items: center;
 font-style: normal;
-color: var(--txt-grey);
+color: $txt-grey;
 }
 
 .header-section{
     padding-top: 24px;
     padding-bottom: 25px;
-    background: var(--txt-white);
+    background: $txt-white;
     }
     
     .header-section .container{
@@ -38,7 +38,7 @@ color: var(--txt-grey);
     position: relative;
     }
     .navigation-link.accent{
-    color: var(--fha-blue);
+    color: $fha-blue;
     }
     
     .navigation-link.accent::after{
@@ -49,18 +49,18 @@ color: var(--txt-grey);
     height: 4px;
     border-radius: 2px;
     top: 46px;
-    background-color: var(--fha-blue);
+    background-color: $fha-blue;
     
-    transition: all 250ms var(--cubic);
+    transition: all 250ms $cubic;
     }
     
     .logo{
-    font-family: var(--secondary-font);
+    font-family: $secondary-font;
     font-weight: 700;
     font-Size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
-    color: var(--fha-blue);
+    color: $fha-blue;
     }
     
     .logo-black{
@@ -71,9 +71,9 @@ color: var(--txt-grey);
     font-Size: 14px;
     line-height: 1.172;
     letter-spacing: 0.02em;
-    color: var(--txt-dark);
+    color: $txt-dark;
     
-    transition: 250ms var(--cubic);
+    transition: 250ms $cubic;
     }
     
     .contacts-list{
@@ -86,7 +86,7 @@ color: var(--txt-grey);
     }
     
     .header-section .contacts-mail{
-    color:var(--fha-blue);
+    color: $fha-blue;
         
     }
     
@@ -96,7 +96,7 @@ color: var(--txt-grey);
     
     .contacts-tel,
     .contacts-mail{
-    fill: var(--txt-grey);
+    fill: $txt-grey;
     }
     
     .tel-link:hover .contacts-svg,
@@ -110,14 +110,14 @@ color: var(--txt-grey);
     }
     
     .mail-link{
-    transition: 250ms var(--cubic);
+    transition: 250ms $cubic;
     }
     
     .tel-link{
-    transition: 250ms var(--cubic);
+    transition: 250ms $cubic;
     }
     
     .contacts-svg{
     margin-right: 10px;
-    transition: 250ms var(--cubic);
+    transition: 250ms $cubic;
     }

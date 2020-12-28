@@ -21,21 +21,21 @@
         justify-content: center;
         height: 90px;
         width: 170px;
-        border: 1px solid var(--icon);
+        border: 1px solid $icon;
         border-radius: 4px;
         align-items: center;
         color: var(--icon);
     
-        transition: color 250ms var(--cubic);
+        transition: color 250ms $cubic;
     }
     
     .our-clients-link:hover,
     .our-clients-link:focus{
-        color: var(--fha-blue);
-        border-color: var(--fha-blue);
+        color: $fha-blue;
+        border-color: $fha-blue;
     }
     
     .clients-svg{
         fill: currentColor;
-        transition: fill 250ms var(--cubic);
+        transition: fill 250ms $cubic;
     }

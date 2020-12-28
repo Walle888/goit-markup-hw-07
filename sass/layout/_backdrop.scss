@@ -7,7 +7,7 @@
     height: 100%;
     background-color: rgba(0,0,0,0.1);
     
-    transition: all 250ms var(--cubic);
+    transition: all 250ms $cubic;
     }
     
     .modal{
@@ -18,7 +18,7 @@
     transform: translate(-50%, -50%);
     width: 528px;
     min-height: 581px;
-    background-color:var(--txt-white);
+    background-color: $txt-white;
     border-radius: 4px;
     }
     
@@ -34,7 +34,7 @@
         font-size: 20px;
         line-height: 1.15;
         letter-spacing: 0.03em;
-        color: var(--b-dark);
+        color: $b-dark;
         margin-bottom: 12px;
     }
     
@@ -44,7 +44,7 @@
     font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.01em;
-    color:var(--txt-grey);
+    color: $txt-grey;
     }
     
     
@@ -62,13 +62,13 @@
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         padding-left: 42px;
-        transition: border 250ms var(--cubic);
+        transition: border 250ms $cubic;
     }
     
     .modal-form-input:focus,
     .modal-form-input:hover{
         outline: none;
-        border: 1px solid var(--fha-blue)
+        border: 1px solid $fha-blue;
     }
     
     .modal-form-icon{
@@ -78,11 +78,11 @@
     left: 12px;
     
     transform: translateY(-50%);
-    transition: fill 250ms var(--cubic);
+    transition: fill 250ms $cubic;
     }
     
     .modal-form-input:focus +.modal-form-icon{
-    fill: var(--fha-blue);
+    fill: $fha-blue;
     }
     
     .modal-form-massege{
@@ -98,13 +98,13 @@
         color: rgba(117, 117, 117, 0.5);
         margin-top: 4px;
         resize: none;
-        transition: border-color 250ms var(--cubic);
+        transition: border-color 250ms $cubic;
     }
     
     .modal-form-massege:focus,
     .modal-form-massege:hover {
         outline: none;
-        border-color: var(--fha-blue);
+        border-color: $fha-blue;
     }
     
     .modal-form-policy-text{
@@ -134,15 +134,15 @@
     }
     
     .modal-form-svg{
-        border: 2px solid var(--b-dark);
+        border: 2px solid $b-dark;
         border-radius: 2px;
         position: absolute;
         margin-left: -23px;
-        transition:  background-color 250ms var(--cubic);
+        transition:  background-color 250ms $cubic;
     }
     
     .modal-form-policy:checked + .modal-form-svg {
-        background-color: var(--fha-blue);
+        background-color: $fha-blue;
         border: none;
         }
     
@@ -153,18 +153,18 @@
     right: 8px;
     width: 30px;
     height: 30px;
-    background: var(--txt-white);
+    background: $txt-white;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     padding: 0;
     justify-content: center;
     cursor: pointer;
-    transition: fill 250ms var(--cubic);
+    transition: fill 250ms $cubic;
     }
     
     .close-btn:hover,
     .close-btn:focus{
-        fill: var(--fha-blue);
+        fill: $fha-blue;
     }
     
     .is-hidden{
@@ -178,10 +178,10 @@
         font-size: 16px;
         line-height: 1.875;
         letter-spacing: 0.06em;
-        color: var(--txt-white);
+        color: $txt-white;
         min-width: 200px;
         background-color: transparent;
-        background: var(--fha-blue);
+        background: $fha-blue;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         padding: 10px 32px;
@@ -195,5 +195,5 @@
         .modal-form-btn:focus,
         .modal-form-btn:hover{
         outline: none;
-        border-color: var(--fha-blue);
+        border-color: $fha-blue;
         }

@@ -1,6 +1,6 @@
 body {
-    font-family: var(--main-font);
-    color: var(--txt-grey);
+    font-family: $main-font;
+    color: $txt-grey;
     }
     
     h1,
@@ -23,8 +23,8 @@ body {
     }
     
     h2,h3{
-    font-family: var(--main-font);
-    color: var(--txt-dark);
+    font-family: $main-font;
+    color: $txt-dark;
     }
     
     button{
