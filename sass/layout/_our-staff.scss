@@ -1,60 +1,47 @@
-.staff{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.166;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $txt-dark;
-    }
-
-.staff{
-    padding-top: 94px;
-    padding-bottom: 50px;
-    }
-    
     .our-staff-section{
     left: 0px;
-    
     background: #F5F4FA;
     padding-bottom: 94px;
-    }
+}
+
+
+    .staff{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.166;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $txt-dark;
     
-    .staff-list{
-    display: flex;
-    }
+        padding-top: 94px;
+        padding-bottom: 50px;
+   
+        &__list{
+            display: flex;
+            }
+
+            &__item{
+                background: $txt-white;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+                border-radius: 0px 0px 4px 4px;
+                }
+
+            &__item:not(:last-child){
+                margin-right: 30px;
+                }
+                
+        }
+           
+
+    
+    
     
     .staff-list-content-wrapper{
     padding-top: 30px;
     padding-bottom: 16px;
     }
     
-    .staff-name{
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.187;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 10px;
-    }
-    
-    .staff-item:not(:last-child){
-    margin-right: 30px;
-    }
-    
-    .staff-item{
-    background: $txt-white;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    }
-    
-    .staff-description{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.187;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $txt-grey;
-    }
+   
     
     .section-staff-icons{
         padding-bottom: 30px;
