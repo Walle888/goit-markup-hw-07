@@ -1,11 +1,3 @@
-.mail-link,
-.tel-link{
-display: flex;
-align-items: center;
-font-style: normal;
-color: $txt-grey;
-}
-
 .header-section{
     padding-top: 24px;
     padding-bottom: 25px;
@@ -23,36 +15,42 @@ color: $txt-grey;
     .navigation{
     display: flex;
     align-items: center;
-    }
-    
-    .navigation__list{
-    display: flex;
-    align-items: center;
-    }
-    
-    .navigation__item:not(:last-child){
-    margin-right: 50px;
-    }
-    
-    .navigation__link{
-    position: relative;
-    }
-    .navigation__link.accent{
-    color: $fha-blue;
-    }
-    
-    .navigation__link.accent::after{
-    display: block;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    top: 46px;
-    background-color: $fha-blue;
-    
-    transition: all 250ms $cubic;
-    }
+
+        &__list{
+        display: flex;
+        align-items: center;
+        }
+
+            &__item:not(:last-child){
+            margin-right: 50px;
+            }
+            
+                &__link{
+                position: relative;
+                font-weight: 500;
+                font-Size: 14px;
+                line-height: 1.172;
+                letter-spacing: 0.02em;
+                color: $txt-dark;
+                transition: 250ms $cubic;
+                }
+
+            &__link.accent{
+            color: $fha-blue;
+            }
+            
+            &__link.accent::after{
+            display: block;
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            top: 46px;
+            background-color: $fha-blue;
+            transition: all 250ms $cubic;
+            }
+}
     
     .logo{
     font-family: $secondary-font;
@@ -66,58 +64,49 @@ color: $txt-grey;
     .logo-black{
     color: #000; 
     }
-    .navigation__link{
-    font-weight: 500;
-    font-Size: 14px;
-    line-height: 1.172;
-    letter-spacing: 0.02em;
-    color: $txt-dark;
     
-    transition: 250ms $cubic;
-    }
-    
-    .contacts-list{
+    .contacts-header{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.172;
     letter-spacing: 0.02em;
     display: flex;
     margin-left: auto;
-    }
-    
-    .header-section .contacts-mail{
-    color: $fha-blue;
-        
-    }
-    
-    .header-section .mail-link{
-    margin-right: 50px;
-    }
-    
-    .contacts-tel,
-    .contacts-mail{
+
+    &__tel,
+    &__mail{
     fill: $txt-grey;
     }
     
-    .tel-link:hover .contacts-svg,
-    .tel-link:focus .contacts-svg{
-    fill: currentColor
+    &__tel-link:hover .contacts-header__svg,
+    &__tel-link:focus .contacts-header__svg,
+    &__mail-link:hover .contacts-header__svg,
+    &__mail-link:focus .contacts-header__svg{
+    fill: $fha-blue;
     }
     
-    .mail-link:hover .contacts-svg,
-    .mail-link:focus .contacts-svg{
-    fill: currentColor
+    &__mail-link,
+    &__tel-link{
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    color: $txt-grey;
     }
-    
-    .mail-link{
+
+    &__mail-link{
     transition: 250ms $cubic;
     }
     
-    .tel-link{
+    &__tel-link{
     transition: 250ms $cubic;
     }
+
+        &__svg{
+        margin-right: 10px;
+        transition: 250ms $cubic;
+        }
+}
     
-    .contacts-svg{
-    margin-right: 10px;
-    transition: 250ms $cubic;
+    .header-section .contacts-header__mail-link{
+    margin-right: 50px;
     }
